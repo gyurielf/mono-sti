@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 import { createLocalStorage, persist } from '@macfja/svelte-persistent-store';
 import type { PersistentStore } from '@macfja/svelte-persistent-store';
-import type { DetailedValue } from '$lib/types';
+import type { DetailedValue } from 'mono-sti/types';
 
 export const exampleDataStore = writable<DetailedValue>();
 
