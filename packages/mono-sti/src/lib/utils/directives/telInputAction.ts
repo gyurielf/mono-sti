@@ -1,4 +1,4 @@
-import { inspectAllowedChars, inputParser } from '$lib';
+import { inspectAllowedChars, inputParser } from '$lib/utils';
 export const telInputAction = (
 	node: HTMLInputElement,
 	{

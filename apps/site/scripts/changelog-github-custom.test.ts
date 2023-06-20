@@ -1,4 +1,4 @@
-import changelogFunctions from './changelog-github-custom';
+import changelogFunctions from './changelog-github-custom.js';
 import parse from '@changesets/parse';
 
 const getReleaseLine = changelogFunctions.getReleaseLine;

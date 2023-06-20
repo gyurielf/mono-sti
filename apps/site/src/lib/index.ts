@@ -6,7 +6,7 @@ export {
 	inspectAllowedChars,
 	normalizeTelInput,
 	getCountryForPartialE164Number
-} from './utils/helpers';
+} from './utils/helpers.js';
 export { parsePhoneNumberWithError, ParseError } from 'libphonenumber-js/max';
-export { clickOutsideAction } from './utils/directives/clickOutsideAction';
-export { normalizedCountries } from './assets';
+export { clickOutsideAction } from './utils/directives/clickOutsideAction.js';
+export { normalizedCountries } from './assets/index.js';

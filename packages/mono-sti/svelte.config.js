@@ -1,4 +1,4 @@
-import staticAdapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-auto';
 import mm from 'micromatch';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
@@ -6,7 +6,7 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 export default {
 	preprocess: [vitePreprocess()],
 	kit: {
-		adapter: staticAdapter()
+		adapter: adapter()
 	},
 	package: {
 		exports: (filepath) => {
@@ -15,8 +15,10 @@ export default {
 				filepath === 'index.ts' ||
 				filepath === 'index.js' ||
 				filepath.endsWith('styles/flags.css')
-			)
+			) {
 				return true;
+			}
+			return false;
 		},
 		files: (filepath) => {
 			return mm.all(filepath, [
