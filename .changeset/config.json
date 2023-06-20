@@ -2,8 +2,10 @@
     "$schema": "https://unpkg.com/@changesets/config@2.3.0/schema.json",
     "changelog": ["../scripts/changelog-github-custom.cjs", { "repo": "gyurielf/mono-sti" }],
     "commit": false,
+    "fixed": [],
     "linked": [],
     "access": "public",
     "baseBranch": "main",
-    "updateInternalDependencies": "patch"
+    "updateInternalDependencies": "patch",
+    "ignore": []
 }
