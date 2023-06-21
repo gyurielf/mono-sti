@@ -1,6 +1,6 @@
 {
-	"name": "mono-sti",
-	"description": "mono-sti",
+	"name": "sti",
+	"description": "sti",
 	"version": "3.0.1",
 	"repository": {
 		"type": "git",
@@ -29,6 +29,7 @@
 		"lint": "npm run prettier:check && npm run eslint && npm run ts && npm run svelte-check",
 		"lint:fix": "npm run eslint:fix && npm run prettier:fix",
 		"package2": "node ./zarf/scripts/pre-build.js && svelte-kit sync && svelte-package && node ./zarf/scripts/post-build.js",
+		"package:watch": "svelte-kit sync && svelte-package --watch",
 		"package": "svelte-kit sync && svelte-package",
 		"prettier": "prettier",
 		"prettier:check": "prettier --check --plugin-search-dir=. .",
@@ -76,16 +77,22 @@
 	},
 	"type": "module",
 	"license": "MIT",
-	"types": "./dist/types/index.d.ts",
+	"main": "./dist/index.js",
 	"exports": {
 		"./styles/flags.css": "./dist/styles/flags.css",
 		"./types": {
-			"types": "./dist/types/index.d.ts",
-			"default": "./dist/types/index.js"
+			"types": "./dist/types/index.d.ts"
 		},
 		"./assets": {
 			"types": "./dist/assets/index.d.ts",
-			"default": "./dist/assets/index.js"
+			"default": "./dist/assets/index.js",
+			"import": "./dist/assets/index.js"
+		},
+		"./utils": {
+			"require": "./dist/utils/index.js",
+			"types": "./dist/utils/index.d.ts",
+			"default": "./dist/utils/index.js",
+			"import": "./dist/utils/index.js"
 		},
 		".": {
 			"types": "./dist/index.d.ts",
@@ -95,8 +102,5 @@
 	},
 	"files": [
 		"dist"
-	],
-	"publishConfig": {
-		"directory": "dist"
-	}
+	]
 }

@@ -5,7 +5,7 @@ on:
         branches:
             - 'main'
         paths:
-            - 'packages/mono-sti/**'
+            - 'packages/sti/**'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
@@ -58,6 +58,6 @@ jobs:
                   cat << EOF > "$HOME/.npmrc"
                     //registry.npmjs.org/:_authToken=$NPM_TOKEN
                   EOF
-                  pnpm publish packages/mono-sti --access public --tag main --no-git-checks
+                  pnpm publish packages/sti --access public --tag main --no-git-checks
               env:
                   NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -40,7 +40,7 @@
 		"sync": "svelte-kit sync"
 	},
 	"dependencies": {
-		"mono-sti": "workspace:*",
+		"sti": "workspace:*",
 		"svelte": "^3.58.0"
 	},
 	"devDependencies": {
