@@ -76,11 +76,22 @@
 	},
 	"type": "module",
 	"license": "MIT",
-	"types": "./src/lib/types/index.d.ts",
+	"types": "./dist/types/index.d.ts",
 	"exports": {
-		".": "./src/lib/index.ts",
-		"./styles/*": "./src/lib/styles/flags.css",
-		"./types/*": "./src/lib/types/*"
+		"./styles/flags.css": "./dist/styles/flags.css",
+		"./types": {
+			"types": "./dist/types/index.d.ts",
+			"default": "./dist/types/index.js"
+		},
+		"./assets": {
+			"types": "./dist/assets/index.d.ts",
+			"default": "./dist/assets/index.js"
+		},
+		".": {
+			"types": "./dist/index.d.ts",
+			"svelte": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
 	},
 	"files": [
 		"dist"

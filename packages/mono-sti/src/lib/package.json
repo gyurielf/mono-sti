@@ -27,6 +27,7 @@
 	},
 	"type": "module",
 	"license": "MIT",
+	"types": "./dist/types/index.d.ts",
 	"exports": {
 		"./package.json": "./package.json",
 		"./styles/flags.css": "./styles/flags.css",
