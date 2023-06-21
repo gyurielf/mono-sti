@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import Seo from '$lib/components/utils/Seo.svelte';
-	import { cubeIn, cubeOut } from '$lib/utils/examples/exampleHelpers';
+	import { cubeIn, cubeOut } from '$lib/utils/examples/exampleHelpers.js';
 	import Usage from '$lib/views/Usage.svelte';
 	import { onDestroy } from 'svelte';
 
@@ -33,10 +33,7 @@
 			name: 'Svelte Tel Input',
 			url: 'https://mono-sti.vercel.app/',
 			logo: 'https://infiniteloop.cloud/i8logo.png',
-			sameAs: [
-				'https://mono-sti.vercel.app',
-				'https://github.com/gyurielf/mono-sti'
-			]
+			sameAs: ['https://mono-sti.vercel.app', 'https://github.com/gyurielf/mono-sti']
 		}
 	]}
 />

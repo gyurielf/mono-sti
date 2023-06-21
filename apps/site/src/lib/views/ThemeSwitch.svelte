@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { theme, toggleTheme } from '$lib/stores/DevExampleStores';
+	import { theme, toggleTheme } from '$lib/stores/DevExampleStores.js';
 
 	let classes = '';
 	export { classes as class };
