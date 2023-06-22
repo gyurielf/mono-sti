@@ -69,11 +69,5 @@
 		"vite": "^4.3.9"
 	},
 	"type": "module",
-	"license": "MIT",
-	"types": "./src/lib/types/index.d.ts",
-	"exports": {
-		".": "./src/lib/index.ts",
-		"./styles/*": "./src/lib/styles/flags.css",
-		"./types/*": "./src/lib/types/*"
-	}
+	"license": "MIT"
 }
