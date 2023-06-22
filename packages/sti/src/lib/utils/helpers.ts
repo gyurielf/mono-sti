@@ -6,7 +6,13 @@ import {
 } from 'libphonenumber-js/max';
 import examples from 'libphonenumber-js/mobile/examples';
 
-import type { PhoneNumber, MetadataJson, Countries, E164Number, CountryCode } from '$lib/types';
+import type {
+	PhoneNumber,
+	MetadataJson,
+	Countries,
+	E164Number,
+	CountryCode
+} from '$lib/types/index.js';
 
 export const capitalize = (str: string) => {
 	return (str && str[0].toUpperCase() + str.slice(1).toLowerCase()) || '';

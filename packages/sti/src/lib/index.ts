@@ -7,6 +7,6 @@ export {
 	getCountryForPartialE164Number,
 	clickOutsideAction,
 	isSelected
-} from './utils/index.js';
+} from '$lib/utils/index.js';
 export { parsePhoneNumberWithError, ParseError } from 'libphonenumber-js/max';
-export { normalizedCountries } from './assets/index.js';
+export { normalizedCountries } from '$lib/assets/index.js';

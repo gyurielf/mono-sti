@@ -7,7 +7,7 @@ module.exports = {
 		'plugin:svelte/prettier',
 		'prettier'
 	],
-	plugins: ['@typescript-eslint'],
+	plugins: ['@typescript-eslint', 'import'],
 	ignorePatterns: ['*.cjs', '.temp/**/*'],
 	overrides: [
 		{
@@ -38,8 +38,33 @@ module.exports = {
 	globals: { $$Generic: 'readable' },
 	rules: {
 		'svelte/no-at-html-tags': 'off',
-
-		'no-restricted-imports': 'off',
+		'import/extensions': [
+			'error',
+			'always',
+			{
+				ignorePackages: true,
+				pattern: {
+					js: 'always',
+					ts: 'never'
+				}
+			}
+		],
+		// 'no-restricted-imports': 'off',
+		'no-restricted-imports': [
+			'warn',
+			{
+				paths: [
+					{
+						name: '.',
+						message: 'Usage of local index imports is not allowed.'
+					},
+					{
+						name: './index',
+						message: 'Import from the source file instead.'
+					}
+				]
+			}
+		],
 		// '@typescript-eslint/no-restricted-imports': [
 		// 	'error',
 		// 	{

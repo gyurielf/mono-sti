@@ -2,7 +2,7 @@
 node_modules
 /build
 /.svelte-kit
-/package
+/dist
 /docs
 .env
 .env.*
@@ -18,3 +18,6 @@ yarn.lock
 coverage
 static
 
+# Utility and CI tools
+zarf
+scripts

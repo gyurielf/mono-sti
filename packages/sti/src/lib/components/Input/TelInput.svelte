@@ -6,9 +6,14 @@
 		getCountryForPartialE164Number,
 		generatePlaceholder,
 		telInputAction
-	} from '$lib/utils';
-	import { watcher } from '$lib/stores';
-	import type { DetailedValue, CountryCode, E164Number, TelInputOptions } from '$lib/types';
+	} from '$lib/utils/index.js';
+	import { watcher } from '$lib/stores/index.js';
+	import type {
+		DetailedValue,
+		CountryCode,
+		E164Number,
+		TelInputOptions
+	} from '$lib/types/index.js';
 
 	const dispatch = createEventDispatcher<{
 		updateCountry: CountryCode | null;

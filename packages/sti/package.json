@@ -60,6 +60,7 @@
 		"edit-package-json": "^0.8.14",
 		"eslint": "^8.43.0",
 		"eslint-config-prettier": "^8.8.0",
+		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-svelte3": "^4.0.0",
 		"jsdom": "^22.1.0",
 		"micromatch": "^4.0.5",

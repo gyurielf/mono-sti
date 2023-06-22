@@ -15,7 +15,7 @@
 //    Area codes
 // ]
 
-import type { Country, CountryCode } from '$lib/types';
+import type { Country, CountryCode } from '$lib/types/index.js';
 
 const allCountries = [
 	['Afghanistan (‫افغانستان‬‎)', 'af', '93'],
