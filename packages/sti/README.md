@@ -20,11 +20,11 @@ npm install --save mono-sti
 
 ## Features
 
--   Parse and validate phone number.You can store one exact format (`E164`), no matter how users type their phone numbers.
--   Format (specified to its country), to make it more readable.
--   Prevent non-digits typing into the input, except the leading `+` sign (and `space` optionally).
--   Handle copy-pasted phone numbers, it's sanitize non-digit characters except the leading `+` sign (and `space` optionally).
--   Automatic placeholder generation for the selected country.
+- Parse and validate phone number.You can store one exact format (`E164`), no matter how users type their phone numbers.
+- Format (specified to its country), to make it more readable.
+- Prevent non-digits typing into the input, except the leading `+` sign (and `space` optionally).
+- Handle copy-pasted phone numbers, it's sanitize non-digit characters except the leading `+` sign (and `space` optionally).
+- Automatic placeholder generation for the selected country.
 
 ## Usage
 
@@ -163,17 +163,17 @@ The default export of the library is the main TelInput component. It has the fol
 
 ## Caveats
 
--   In order to reset the component from outside, you must pass (or set if you binded) `null` for both the `value` and `country` properties.
--   Let's assume you pass a `US` `E164` number, which can be a partial `E164`, but long enough to determine the country and you pass `DE` country directly. The country will be updated to `US`, which is determined from the `E164` in this example. If the `E164` is not long enough to determine its country, then the country will stay what you passed to the component (`DE`).
+- In order to reset the component from outside, you must pass (or set if you binded) `null` for both the `value` and `country` properties.
+- Let's assume you pass a `US` `E164` number, which can be a partial `E164`, but long enough to determine the country and you pass `DE` country directly. The country will be updated to `US`, which is determined from the `E164` in this example. If the `E164` is not long enough to determine its country, then the country will stay what you passed to the component (`DE`).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Goals
 
--   Solve the problem that a users can enter the same phone number in different formats.
--   Storing a phone number in a standard format, that can be indexable and searchable in any database.
--   Should be accessible for the the browser. Eg. for a `<a href="tel+36201234567 />`.
--   The stored phone number format can be useable for any SMS gateway(e.g for 2FA) and if somebody can call the number from anywhere, it should work.
+- Solve the problem that a users can enter the same phone number in different formats.
+- Storing a phone number in a standard format, that can be indexable and searchable in any database.
+- Should be accessible for the the browser. Eg. for a `<a href="tel+36201234567 />`.
+- The stored phone number format can be useable for any SMS gateway(e.g for 2FA) and if somebody can call the number from anywhere, it should work.
 
 ## Dependencies
 
@@ -193,14 +193,14 @@ The default export of the library is the main TelInput component. It has the fol
 
 ## Roadmap
 
--   [x] Add Changelog
--   [x] Add CI/CD
--   [x] Integrate libphonenumber
--   [x] Implement parser
--   [x] Add basics docs and examples
--   [x] Add advanced examples
--   [x] Generate placeholders autimatically
--   [ ] Improve A11Y
+- [x] Add Changelog
+- [x] Add CI/CD
+- [x] Integrate libphonenumber
+- [x] Implement parser
+- [x] Add basics docs and examples
+- [x] Add advanced examples
+- [x] Generate placeholders autimatically
+- [ ] Improve A11Y
 
 See the [open issues](https://github.com/gyurielf/mono-sti/issues) for a list of proposed features (and known issues).
 

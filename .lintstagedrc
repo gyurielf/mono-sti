@@ -1,8 +1,8 @@
 {
-	"apps/**/*.{js,ts,svelte,svx}": [
+	"apps/**/*.{js,ts,svelte}": [
 		"eslint --fix"
 	],
-	"packages/components/**/*.{js,ts,svelte,svx}": [
+	"packages/sti/**/*.{js,ts,svelte}": [
 		"eslint --fix"
 	]
 }

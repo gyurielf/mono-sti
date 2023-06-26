@@ -1,41 +1,45 @@
 {
-  "name": "monorepo-sti",
-  "version": "0.0.1",
-  "description": "mono-sti",
-  "private": true,
-  "type": "module",
-  "scripts": {
-    "test": "pnpm test -r --filter=./packages/*",
-    "build": "pnpm -r --filter=./packages/* build",
-    "build:apps": "pnpm -r --filter=./apps/* build",
-    "check": "cd packages/svelte && pnpm build && cd ../../ && pnpm -r check",
-    "lint": "pnpm -r lint",
-    "format": "pnpm -r format",
-    "changeset:version": "changeset version && pnpm -r generate:version && git add --all",
-    "changeset:publish": "changeset publish"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gyurielf/mono-sti.git"
-  },
-  "engines": {
-    "npm": ">= 8",
-    "yarn": ">=2",
-    "node": ">= 16",
-    "pnpm": ">= 7"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@changesets/cli": "^2.26.1",
-    "@changesets/get-github-info": "^0.5.2",
-    "@changesets/types": "^5.2.1",
-    "@typescript-eslint/eslint-plugin": "^5.60.0",
-    "dotenv": "^16.3.0",
-    "eslint": "^8.43.0",
-    "eslint-plugin-svelte": "^2.31.0",
-    "eslint-plugin-unicorn": "^47.0.0",
-    "prettier": "^2.8.8",
-    "prettier-plugin-svelte": "^2.10.1"
-  },
-  "packageManager": "pnpm@8.6.0"
+    "name": "monorepo-sti",
+    "version": "0.0.1",
+    "description": "mono-sti",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "test": "pnpm test -r --filter=./packages/*",
+        "build": "pnpm -r --filter=./packages/* build",
+        "build:apps": "pnpm -r --filter=./apps/* build",
+        "check": "cd packages/svelte && pnpm build && cd ../../ && pnpm -r check",
+        "lint": "pnpm -r lint",
+        "format": "pnpm -r format",
+        "changeset:version": "changeset version && pnpm -r generate:version && git add --all",
+        "changeset:publish": "changeset publish",
+        "package": "pnpm -r package",
+        "changeset": "changeset",
+        "ci:release": "changeset publish",
+        "ci:version": "changeset version"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/gyurielf/mono-sti.git"
+    },
+    "engines": {
+        "npm": ">= 8",
+        "yarn": ">=2",
+        "node": ">= 16",
+        "pnpm": ">= 7"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@changesets/cli": "^2.26.1",
+        "@changesets/get-github-info": "^0.5.2",
+        "@changesets/types": "^5.2.1",
+        "@typescript-eslint/eslint-plugin": "^5.60.0",
+        "dotenv": "^16.3.0",
+        "eslint": "^8.43.0",
+        "eslint-plugin-svelte": "^2.31.0",
+        "eslint-plugin-unicorn": "^47.0.0",
+        "prettier": "^2.8.8",
+        "prettier-plugin-svelte": "^2.10.1"
+    },
+    "packageManager": "pnpm@8.6.0"
 }
