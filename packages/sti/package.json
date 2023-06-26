@@ -85,8 +85,5 @@
 	"publishConfig": {
 		"directory": "dist",
 		"linkDirectory": true
-	},
-	"files": [
-		"dist"
-	]
+	}
 }

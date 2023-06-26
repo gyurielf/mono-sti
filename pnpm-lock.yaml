@@ -43,7 +43,7 @@ importers:
     dependencies:
       sti:
         specifier: workspace:*
-        version: link:../../packages/sti
+        version: link:../../packages/sti/dist
       svelte:
         specifier: ^3.58.0
         version: 3.58.0
@@ -214,6 +214,7 @@ importers:
       vitest:
         specifier: ^0.32.2
         version: 0.32.2(jsdom@22.1.0)
+    publishDirectory: dist
 
 packages:
 
