@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	import { clickOutsideAction } from '$lib/utils/directives/clickOutsideAction.js';
+	import { clickOutsideAction } from 'sti/utils';
 	import { TelInput, isSelected, normalizedCountries } from 'sti';
 	import type {
 		DetailedValue,

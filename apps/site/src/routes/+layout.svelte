@@ -2,7 +2,7 @@
 	import TheFooter from '$lib/views/TheFooter.svelte';
 	import TheHeader from '$lib/views/TheHeader.svelte';
 	import '../app.css';
-	import '$lib/styles/flags.css';
+	import 'sti/styles/flags.css';
 </script>
 
 <TheHeader />

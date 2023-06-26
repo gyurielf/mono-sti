@@ -1,10 +1,8 @@
 <script lang="ts">
 	import { createEventDispatcher } from 'svelte';
-	import { normalizedCountries } from '$lib/assets';
-	import { clickOutsideAction } from '$lib/utils/directives/clickOutsideAction';
-	import TelInput from '$lib/components/Input/TelInput.svelte';
-	import { isSelected } from '$lib/utils/helpers';
-	import type { DetailedValue, CountrySelectEvents, CountryCode, E164Number } from '$lib/types';
+	import { TelInput, normalizedCountries } from 'sti';
+	import { isSelected, clickOutsideAction } from 'sti/utils';
+	import type { DetailedValue, CountrySelectEvents, CountryCode, E164Number } from 'sti/types';
 
 	export let searchText = '';
 	let selectedCountry: CountryCode;
