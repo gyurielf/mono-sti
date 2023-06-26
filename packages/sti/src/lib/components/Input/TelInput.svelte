@@ -8,12 +8,7 @@
 		telInputAction
 	} from '$lib/utils/index.js';
 	import { watcher } from '$lib/stores/index.js';
-	import type {
-		DetailedValue,
-		CountryCode,
-		E164Number,
-		TelInputOptions
-	} from '$lib/types/index.js';
+	import type { DetailedValue, CountryCode, E164Number, TelInputOptions } from '$lib/types';
 
 	const dispatch = createEventDispatcher<{
 		updateCountry: CountryCode | null;

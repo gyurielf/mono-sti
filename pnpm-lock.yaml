@@ -17,9 +17,6 @@ importers:
       '@changesets/types':
         specifier: ^5.2.1
         version: 5.2.1
-      '@svitejs/changesets-changelog-github-compact':
-        specifier: ^1.1.0
-        version: 1.1.0
       '@typescript-eslint/eslint-plugin':
         specifier: ^5.60.0
         version: 5.60.0(@typescript-eslint/parser@5.59.11)(eslint@8.43.0)(typescript@5.0.4)
@@ -35,9 +32,6 @@ importers:
       eslint-plugin-unicorn:
         specifier: ^47.0.0
         version: 47.0.0(eslint@8.43.0)
-      playwright:
-        specifier: ^1.35.1
-        version: 1.35.1
       prettier:
         specifier: ^2.8.8
         version: 2.8.8
@@ -219,7 +213,7 @@ importers:
         version: 4.3.9(@types/node@20.3.1)
       vitest:
         specifier: ^0.32.2
-        version: 0.32.2(jsdom@22.1.0)(playwright@1.35.1)
+        version: 0.32.2(jsdom@22.1.0)
 
 packages:
 
@@ -905,16 +899,6 @@ packages:
       vitefu: 0.2.4(vite@4.3.9)
     transitivePeerDependencies:
       - supports-color
-    dev: true
-
-  /@svitejs/changesets-changelog-github-compact@1.1.0:
-    resolution: {integrity: sha512-qhUGGDHcpbY2zpjW3SwqchuW8J/5EzlPFud7xNntHKA7f3a/mx5+g+ruJKFHSAiVZYo30PALt+AyhmPUNKH/Og==}
-    engines: {node: ^14.13.1 || ^16.0.0 || >=18}
-    dependencies:
-      '@changesets/get-github-info': 0.5.2
-      dotenv: 16.3.0
-    transitivePeerDependencies:
-      - encoding
     dev: true
 
   /@testing-library/dom@8.20.1:
@@ -3857,15 +3841,6 @@ packages:
     hasBin: true
     dev: true
 
-  /playwright@1.35.1:
-    resolution: {integrity: sha512-NbwBeGJLu5m7VGM0+xtlmLAH9VUfWwYOhUi/lSEDyGg46r1CA9RWlvoc5yywxR9AzQb0mOCm7bWtOXV7/w43ZA==}
-    engines: {node: '>=16'}
-    hasBin: true
-    requiresBuild: true
-    dependencies:
-      playwright-core: 1.35.1
-    dev: true
-
   /pluralize@8.0.0:
     resolution: {integrity: sha512-Nc3IT5yHzflTfbjgqWcCPpo7DaKy4FnpB0l/zCAW0Tc7jxAiuqSxHasntB3D7887LSrA93kDJ9IXovxJYxyLCA==}
     engines: {node: '>=4'}
@@ -5355,7 +5330,7 @@ packages:
       vite: 4.3.9(@types/node@20.3.1)
     dev: true
 
-  /vitest@0.32.2(jsdom@22.1.0)(playwright@1.35.1):
+  /vitest@0.32.2(jsdom@22.1.0):
     resolution: {integrity: sha512-hU8GNNuQfwuQmqTLfiKcqEhZY72Zxb7nnN07koCUNmntNxbKQnVbeIS6sqUgR3eXSlbOpit8+/gr1KpqoMgWCQ==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -5405,7 +5380,6 @@ packages:
       magic-string: 0.30.0
       pathe: 1.1.1
       picocolors: 1.0.0
-      playwright: 1.35.1
       std-env: 3.3.3
       strip-literal: 1.0.1
       tinybench: 2.5.0
