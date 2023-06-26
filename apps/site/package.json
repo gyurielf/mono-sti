@@ -1,5 +1,5 @@
 {
-	"name": "site",
+	"name": "sti-site",
 	"description": "mono-sti",
 	"version": "3.0.1",
 	"repository": {
@@ -40,7 +40,7 @@
 		"sync": "svelte-kit sync"
 	},
 	"dependencies": {
-		"sti": "workspace:*",
+		"@gyurielf/mono-sti": "workspace:*",
 		"svelte": "^3.58.0"
 	},
 	"devDependencies": {

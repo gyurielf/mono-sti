@@ -41,7 +41,7 @@ importers:
 
   apps/site:
     dependencies:
-      sti:
+      '@gyurielf/mono-sti':
         specifier: workspace:*
         version: link:../../packages/sti/dist
       svelte:
