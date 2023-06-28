@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { OpenGraph, Twitter } from './SeoTypes';
 	import type { Thing, WithContext } from 'schema-dts';
-	import { jsonLdScript } from '$lib/utils/directives/seoJsonLdAction';
+	import { jsonLdScript } from '$lib/utils/directives/seoJsonLdAction.js';
 
 	export let title: string | null = null;
 	export let noindex = false;

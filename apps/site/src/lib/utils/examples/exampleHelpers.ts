@@ -1,4 +1,4 @@
-import type { DetailedValue } from '$lib/types';
+import type { DetailedValue } from '@gyurielf/mono-sti/types';
 
 export const jsonPrettyParser = (node: HTMLElement, data: DetailedValue | null) => {
 	data !== null && (node.innerHTML = `<code>${JSON.stringify(data, null, 2)}</code>`);

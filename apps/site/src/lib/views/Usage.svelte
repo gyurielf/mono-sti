@@ -4,7 +4,12 @@
 	import PayloadBlock from '$lib/components/utils/PayloadBlock.svelte';
 	import OptionsPanel from './OptionsPanel.svelte';
 	import EventDrivenPhoneInput from '$lib/components/examples/EventDrivenPhoneInput.svelte';
-	import type { DetailedValue, E164Number, TelInputOptions, CountryCode } from 'mono-sti/types';
+	import type {
+		DetailedValue,
+		E164Number,
+		TelInputOptions,
+		CountryCode
+	} from '@gyurielf/mono-sti/types';
 
 	interface ExampleProps {
 		value: E164Number | null;

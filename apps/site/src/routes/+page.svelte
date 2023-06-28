@@ -32,7 +32,6 @@
 			'@type': 'WebApplication',
 			name: 'Svelte Tel Input',
 			url: 'https://mono-sti.vercel.app/',
-			logo: 'https://infiniteloop.cloud/i8logo.png',
 			sameAs: ['https://mono-sti.vercel.app', 'https://github.com/gyurielf/mono-sti']
 		}
 	]}
