@@ -5,19 +5,19 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "test": "pnpm test -r --filter=./packages/*",
-        "build": "pnpm -r --filter=./packages/* build",
         "build:apps": "pnpm -r --filter=./apps/* build",
-        "check": "cd packages/svelte && pnpm build && cd ../../ && pnpm -r check",
-        "linta": "pnpm -r lint",
-        "lint": "pnpm -r lint && eslint --cache --cache-location node_modules/.eslintcache 'packages/**/*.{js,svelte,ts}'",
-        "format": "pnpm -r format",
-        "changeset:version": "changeset version && pnpm -r generate:version && git add --all",
+        "build:packages": "pnpm -r --filter=./packages/* build",
         "changeset:publish": "changeset publish",
-        "package": "pnpm -r package",
+        "changeset:version": "changeset version && pnpm -r generate:version && git add --all",
         "changeset": "changeset",
+        "check": "cd packages/svelte && pnpm build && cd ../../ && pnpm -r check",
         "ci:release": "changeset publish",
-        "ci:version": "changeset version"
+        "ci:version": "changeset version",
+        "lint": "pnpm -r lint && eslint --cache --cache-location node_modules/.eslintcache 'packages/**/*.{js,svelte,ts}'",
+        "lint:fix": "pnpm -r lint:fix",
+        "package": "pnpm -r package",
+        "prepare:husky": "husky install",
+        "test": "pnpm test -r --filter=./packages/*"
     },
     "repository": {
         "type": "git",
