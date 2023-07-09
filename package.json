@@ -17,6 +17,7 @@
         "lint": "pnpm -r lint",
         "package": "pnpm -r package",
         "prepare:husky": "husky install",
+        "sync": "pnpm -r sync",
         "test": "pnpm test -r --filter=./packages/*"
     },
     "repository": {
