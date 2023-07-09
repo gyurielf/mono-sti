@@ -1,5 +1,15 @@
 # mono-sti
 
+## 3.0.2
+
+### Patch Changes
+
+-   fix: ci
+
+-   kecske
+
+-   test ([#1](https://github.com/gyurielf/mono-sti/pull/1))
+
 ## 3.0.1
 
 ### Patch Changes
