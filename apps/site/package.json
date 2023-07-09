@@ -28,13 +28,13 @@
 		"eslint:fix": "eslint --fix",
 		"lint": "npm run prettier:check && npm run eslint && npm run ts && npm run svelte-check",
 		"lint:fix": "npm run eslint:fix && npm run prettier:fix",
-		"prettier:check": "prettier --check --plugin-search-dir=. .",
-		"prettier:fix": "prettier --write --plugin-search-dir=. .",
 		"preview": "vite preview",
-		"svelte-check": "svelte-kit sync && svelte-check --ignore 'dist,build,coverage,.svelte-kit,package' --fail-on-warnings",
+		"sync": "svelte-kit sync",
 		"test": "playwright test",
 		"ts": "tsc --noEmit",
-		"sync": "svelte-kit sync"
+		"prettier:check": "prettier --check --plugin-search-dir=. .",
+		"prettier:fix": "prettier --write --plugin-search-dir=. .",
+		"svelte-check": "svelte-kit sync && svelte-check --ignore 'dist,build,coverage,.svelte-kit,package' --fail-on-warnings"
 	},
 	"dependencies": {
 		"@gyurielf/mono-sti": "workspace:*",
