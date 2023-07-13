@@ -1,7 +1,7 @@
 {
     "name": "@gyurielf/mono-sti",
     "description": "sti",
-    "version": "3.0.2",
+    "version": "3.0.3",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/gyurielf/mono-sti.git"

@@ -1,5 +1,11 @@
 # mono-sti
 
+## 3.0.3
+
+### Patch Changes
+
+-   chore: prevent site publish ([#3](https://github.com/gyurielf/mono-sti/pull/3))
+
 ## 3.0.2
 
 ### Patch Changes
