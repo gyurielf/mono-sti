@@ -6,6 +6,8 @@
     "type": "module",
     "scripts": {
         "build:apps": "pnpm -r --filter=./apps/* build",
+        "dev": "pnpm -r --filter=./apps/* dev",
+        "preview": "pnpm -r --filter=./apps/* preview",
         "build:packages": "pnpm -r --filter=./packages/* build",
         "changeset:publish": "changeset publish",
         "changeset:version": "changeset version && pnpm -r generate:version && git add --all",
