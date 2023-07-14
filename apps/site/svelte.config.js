@@ -5,9 +5,6 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 export default {
 	preprocess: [vitePreprocess()],
 	kit: {
-		adapter: staticAdapter({
-			pages: 'dist',
-			assets: 'dist'
-		})
+		adapter: staticAdapter()
 	}
 };
