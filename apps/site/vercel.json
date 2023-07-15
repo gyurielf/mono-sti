@@ -3,6 +3,5 @@
 	"github": {
 		"silent": false
 	},
-	"buildCommand": "pnpm build",
-	"outputDirectory": "build"
+	"buildCommand": "pnpm build"
 }
