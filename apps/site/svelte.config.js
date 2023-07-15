@@ -6,8 +6,8 @@ export default {
 	preprocess: [vitePreprocess()],
 	kit: {
 		adapter: staticAdapter({
-			pages: 'dist',
-			assets: 'dist'
+			pages: 'build',
+			assets: 'build'
 		})
 	}
 };
