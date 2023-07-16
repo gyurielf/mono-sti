@@ -1,8 +1,0 @@
-{
-	"apps/**/*.{js,ts,svelte}": [
-		"eslint --fix"
-	],
-	"packages/sti/**/*.{js,ts,svelte}": [
-		"eslint --fix"
-	]
-}
