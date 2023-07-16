@@ -10,6 +10,7 @@
 		TelInputOptions,
 		Country
 	} from '@gyurielf/mono-sti/types';
+    import '@gyurielf/mono-sti/styles/flags.css';
 
 	export let clickOutside = true;
 	export let closeOnClick = true;

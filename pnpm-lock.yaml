@@ -43,7 +43,7 @@ importers:
     dependencies:
       '@gyurielf/mono-sti':
         specifier: workspace:*
-        version: link:../../packages/sti/dist
+        version: link:../../packages/sti
       svelte:
         specifier: ^3.58.0
         version: 3.58.0
@@ -214,7 +214,6 @@ importers:
       vitest:
         specifier: ^0.33.0
         version: 0.33.0(jsdom@22.1.0)
-    publishDirectory: dist
 
 packages:
 
