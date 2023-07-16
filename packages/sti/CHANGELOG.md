@@ -1,5 +1,11 @@
 # mono-sti
 
+## 3.0.4
+
+### Patch Changes
+
+-   fix: format ([#6](https://github.com/gyurielf/mono-sti/pull/6))
+
 ## 3.0.3
 
 ### Patch Changes
